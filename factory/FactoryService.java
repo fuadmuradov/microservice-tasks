@@ -5,8 +5,8 @@ import static org.example.factory.ProgrammingLanguage.REACT;
 
 public class FactoryService {
     public static void main(String[] args) {
-        DeveloperFactory developerFactory = createDeveloperFactoryByLanguage(REACT);
-        Developer developer = developerFactory.createDeveloper();
+        var developerFactory = createDeveloperFactoryByLanguage(REACT);
+        var developer = developerFactory.createDeveloper();
         developer.writeCode();
     }
     public static DeveloperFactory createDeveloperFactoryByLanguage(ProgrammingLanguage language){

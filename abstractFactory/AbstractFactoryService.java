@@ -8,7 +8,7 @@ import static org.example.abstractFactory.TeamNames.WEBSITE;
 
 public class AbstractFactoryService {
     public static void main(String[] args) {
-        ProjectTeamFactory projectTeamFactory = createTeamFactory(WEBSITE);
+        var projectTeamFactory = createTeamFactory(WEBSITE);
         var developer= projectTeamFactory.createDeveloper();
         var prOwner = projectTeamFactory.createProductOwner();
         var tester = projectTeamFactory.createTester();

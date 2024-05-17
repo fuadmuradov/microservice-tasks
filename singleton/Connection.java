@@ -1,8 +1,7 @@
 package org.example.singleton;
 
 public enum Connection {
-    INSTANCE,
-    INSTANCE2;
+    INSTANCE;
     private static String queryString = "query String";
 
     public void addQuery(String query){

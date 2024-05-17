@@ -38,6 +38,10 @@ public class Customer {
         return age;
     }
 
+    public static CustomerBuilder builder(){
+        return new CustomerBuilder();
+    }
+
     static class CustomerBuilder{
         private Long id;
         private String name;
