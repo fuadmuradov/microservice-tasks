@@ -4,11 +4,10 @@ import org.example.abstractFactory.bankingApp.BankingTeamFactory;
 import org.example.abstractFactory.webSiteApp.WebsiteTeamFactory;
 
 import static org.example.abstractFactory.TeamNames.BANKING;
-import static org.example.abstractFactory.TeamNames.WEBSITE;
 
 public class AbstractFactoryService {
     public static void main(String[] args) {
-        var projectTeamFactory = createTeamFactory(WEBSITE);
+        var projectTeamFactory = createTeamFactory(BANKING);
         var developer= projectTeamFactory.createDeveloper();
         var prOwner = projectTeamFactory.createProductOwner();
         var tester = projectTeamFactory.createTester();

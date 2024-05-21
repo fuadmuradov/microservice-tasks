@@ -1,11 +1,10 @@
 package org.example.factory;
 
-import static org.example.factory.ProgrammingLanguage.KOTLIN;
-import static org.example.factory.ProgrammingLanguage.REACT;
+import static org.example.factory.ProgrammingLanguage.*;
 
 public class FactoryService {
     public static void main(String[] args) {
-        var developerFactory = createDeveloperFactoryByLanguage(REACT);
+        var developerFactory = createDeveloperFactoryByLanguage(JAVA);
         var developer = developerFactory.createDeveloper();
         developer.writeCode();
     }
